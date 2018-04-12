@@ -18,8 +18,8 @@ def handle_command(slack_api, command, channel):
 	elif command.lower().startswith('hi') or command.lower().startswith('hey') or command.lower().startswith('hello') or command.lower().startswith('who are you'):
 		slack_api.rtm_send_message(channel, 'Hey, I\'m your slack bot, how may I help you?')
 	else:
-		print 'Invalid Command: Not Understood'
-		slack_api.rtm_send_message(channel, 'Invalid Command: Not Understood')
+		print 'did not understand'
+		slack_api.rtm_send_message(channel, 'did not understand')
 	
 def main():
 	"""
